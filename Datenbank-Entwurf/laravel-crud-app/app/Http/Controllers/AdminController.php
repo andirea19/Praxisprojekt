@@ -69,6 +69,7 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
         $storeData = $request->validate([
             'name' => 'required|max:255',
@@ -79,6 +80,7 @@ class AdminController extends Controller
         $admin = Admin::create($storeData);
         return redirect('/admins')->with('completed', 'Admin has been saved!');
     }
+    
     /**
      * Display the specified resource.
      *
