@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "jquery": "^3.6.0",
         "sqlite3": "^5.0.8"
     }
 }
