@@ -1,0 +1,169 @@
+/*! CSS Used from: https://moodle.samariterbund.net/theme/styles_debug.php?theme=academi&type=scss */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;}
+*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;}
+section{display:block;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:.9375rem;font-weight:400;line-height:1.5;color:#343a40;text-align:left;background-color:#fff;}
+@media (max-width: 1200px){
+body{font-size:calc(.90375rem + .045vw);}
+}
+a{color:#1177d1;text-decoration:none;background-color:transparent;}
+a:hover{color:#0b4f8a;text-decoration:underline;}
+label{display:inline-block;margin-bottom:.5rem;}
+input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+input{overflow:visible;}
+[type="submit"]{-webkit-appearance:button;}
+[type="submit"]::-moz-focus-inner{padding:0;border-style:none;}
+fieldset{min-width:0;padding:0;margin:0;border:0;}
+legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal;}
+@media (max-width: 1200px){
+legend{font-size:calc(.96rem + .72vw);}
+}
+.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-12,.col-md-3,.col-md-9{position:relative;width:100%;padding-right:15px;padding-left:15px;}
+.col-12{flex:0 0 100%;max-width:100%;}
+@media (min-width: 768px){
+.col-md-3{flex:0 0 25%;max-width:25%;}
+.col-md-9{flex:0 0 75%;max-width:75%;}
+}
+.form-control{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:.9375rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ced4da;border-radius:0;-webkit-transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;-o-transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media (max-width: 1200px){
+.form-control{font-size:calc(.90375rem + .045vw);}
+}
+@media (prefers-reduced-motion: reduce){
+.form-control{-webkit-transition:none;-o-transition:none;transition:none;}
+}
+.form-control::-ms-expand{background-color:transparent;border:0;}
+.form-control:-moz-focusring{color:transparent;text-shadow:0 0 0 #495057;}
+.form-control:focus{color:#495057;background-color:#fff;border-color:#6eb5f3;outline:0;-webkit-box-shadow:0 0 0 .2rem rgba(17,119,209,.75);box-shadow:0 0 0 .2rem rgba(17,119,209,.75);}
+.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::-moz-placeholder{color:#6c757d;opacity:1;}
+.form-control:-ms-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::placeholder{color:#6c757d;opacity:1;}
+.form-control:disabled{background-color:#e9ecef;opacity:1;}
+.col-form-label{padding-top:calc(.375rem + 1px);padding-bottom:calc(.375rem + 1px);margin-bottom:0;font-size:inherit;line-height:1.5;}
+.form-group{margin-bottom:1rem;}
+.invalid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:#d43f3a;}
+.form-inline{display:flex;flex-flow:row wrap;align-items:center;}
+@media (min-width: 576px){
+.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle;}
+}
+.btn{display:inline-block;font-weight:400;color:#343a40;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:.9375rem;line-height:1.5;border-radius:0;-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;-o-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media (max-width: 1200px){
+.btn{font-size:calc(.90375rem + .045vw);}
+}
+@media (prefers-reduced-motion: reduce){
+.btn{-webkit-transition:none;-o-transition:none;transition:none;}
+}
+.btn:hover{color:#343a40;text-decoration:none;}
+.btn:focus{outline:0;-webkit-box-shadow:0 0 0 .2rem rgba(17,119,209,.75);box-shadow:0 0 0 .2rem rgba(17,119,209,.75);}
+.btn:disabled{opacity:.65;}
+.btn-primary{color:#fff;background-color:#1177d1;border-color:#1177d1;}
+.btn-primary:hover{color:#fff;background-color:#0e63ae;border-color:#0d5ca2;}
+.btn-primary:focus{color:#fff;background-color:#0e63ae;border-color:#0d5ca2;-webkit-box-shadow:0 0 0 .2rem rgba(53,139,216,.5);box-shadow:0 0 0 .2rem rgba(53,139,216,.5);}
+.btn-primary:disabled{color:#fff;background-color:#1177d1;border-color:#1177d1;}
+.clearfix::after{display:block;clear:both;content:"";}
+.d-inline{display:inline!important;}
+@media (min-width: 576px){
+.float-sm-right{float:right!important;}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;}
+.py-3{padding-top:1rem!important;}
+.py-3{padding-bottom:1rem!important;}
+.text-nowrap{white-space:nowrap!important;}
+@media print{
+*,*::before,*::after{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+body{min-width:992px!important;}
+}
+#region-main{overflow-x:auto;overflow-y:visible;background-color:#fff;}
+@media (min-width: 576px){
+#region-main{border:1px solid rgba(0,0,0,.125);padding:1.25rem;}
+}
+#user-notifications{display:block;overflow:hidden;}
+.sr-only-focusable:focus{outline:0;-webkit-box-shadow:0 0 0 .2rem rgba(17,119,209,.75);box-shadow:0 0 0 .2rem rgba(17,119,209,.75);}
+.sr-only-focusable:focus:hover{text-decoration:none;}
+#maincontent{display:block;height:1px;overflow:hidden;}
+.sr-only-focusable:active,.sr-only-focusable:focus{z-index:1031;position:fixed;background:#fff;padding:7px;left:0;top:0;}
+@media (max-width: 767.98px){
+.mform{width:100%;padding-right:15px;padding-left:15px;}
+}
+@media (max-width: 576px) and (max-height: 320px){
+div#page{margin-top:0;}
+}
+:target::before{content:" ";display:block;height:60px;margin-top:-60px;width:1px;pointer-events:none;}
+#page{margin-top:50px;}
+.mform .form-inline .form-control{max-width:100%;}
+.mform fieldset{margin-bottom:.5rem;border-bottom:1px solid #dee2e6;}
+.mform .fitem .felement input[name="email"]{text-align:left;direction:ltr;}
+@media (min-width: 576px){
+.mform fieldset{margin-left:1.5rem;}
+}
+.btn-primary:focus{outline:.2rem solid #020c14;-webkit-box-shadow:inset 0 0 0 2px #fff;box-shadow:inset 0 0 0 2px #fff;}
+body{height:100%;}
+#page-wrapper{height:100%;display:flex;flex-direction:column;}
+#page-wrapper #page{flex:1 0 auto;display:flex;flex-direction:column;}
+#page-wrapper #page #page-content{flex:1 0 auto;}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+/*! CSS Used from: https://moodle.samariterbund.net/theme/styles_debug.php?sheet=theme&theme=academi&type=theme */
+body{font-family:Century Gothic,Arial,Helvetica,sans-serif;color:var(--color_storm_dust_approx);padding-top:0;background:var(--white);}
+.sr-only-focusable:focus{outline:none;-webkit-box-shadow:none;box-shadow:none;}
+a{color:var(--color_secondary);}
+a:hover,a:focus,a:active{color:var(--color_secondary);outline:none;}
+.btn{height:40px;outline:none;line-height:1.5;}
+*:focus{outline:none;}
+.btn:focus{outline:none;}
+a:focus{outline:none;}
+@media (max-width: 574px){
+.boxwidthnormal{width:auto;}
+form input[type="text"]{max-width:220px;}
+}
+label{padding-top:0;}
+legend{float:left;font-size:16px;color:var(--grey);line-height:20px;padding-bottom:20px;border-bottom-color:var(--color_alto_approx);}
+legend + div{clear:both;}
+input{font-family:Century Gothic,Arial,Helvetica,sans-serif;color:var(--color_chicago_approx);}
+input[size]{width:auto;}
+input[type="text"]{height:40px;border-radius:0;border-color:var(--color_alto_approx);-webkit-box-shadow:none;box-shadow:none;}
+input[type="text"]:focus{border-color:rgba(136,183,123,.5);-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(205,255,191,1);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(205,255,191,1);}
+.btn-primary{font-weight:bold;font-family:Arial,Helvetica,sans-serif;color:var(--white);text-shadow:none;background:var(--color_primary);padding:11px 16px;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none;}
+.btn-primary:hover{color:var(--white);background:var(--color_gravel_approx);outline:0;}
+.btn-primary:focus{color:var(--white);background:var(--color_gravel_approx);outline:0;-webkit-box-shadow:none;box-shadow:none;}
+.btn-primary:active{-webkit-box-shadow:none;box-shadow:none;background:var(--color_gravel_approx);}
+.btn-primary,input[type="submit"]{font-weight:bold;font-family:Arial,Helvetica,sans-serif;color:var(--white);text-shadow:none;background:var(--color_primary);padding:11px 16px;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none;}
+.btn-primary:hover,input[type="submit"]:hover{color:var(--white);background:var(--color_gravel_approx);outline:0;}
+.btn-primary:focus,input[type="submit"]:focus{color:var(--white);background:var(--color_gravel_approx);outline:0;-webkit-box-shadow:none;box-shadow:none;}
+.btn-primary:active,input[type="submit"]:active{-webkit-box-shadow:none;box-shadow:none;background:var(--color_gravel_approx);}
+.mform .fitem{margin-bottom:24px;}
+.mform label{font-size:16px;padding-top:5px;}
+#region-main{float:none;}
+.btn-primary:active:hover{color:var(--white);background-color:var(--color_gravel_approx);}
+.btn-primary:active:focus{color:var(--white);background-color:var(--color_gravel_approx);}
+#page{margin-top:0;}
+@media (max-width: 767px){
+.mform .fitem{margin-bottom:10px;}
+}
+.form-control:focus{-webkit-box-shadow:none;box-shadow:none;}
+#page-wrapper{height:auto;margin-bottom:50px;}
+/*! CSS Used from: https://moodle.samariterbund.net/theme/styles_debug.php?sheet=custom&theme=academi&type=theme */
+body{font-family:"PT Sans",sans-serif!important;}
+.btn-primary{font-family:"PT Sans",sans-serif!important;}
+.btn-primary,input[type="submit"]{font-family:"PT Sans",sans-serif!important;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0ysmIEDQ.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0w8mIEDQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0ycmIEDQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0x8mI.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizdRExUiTo99u79D0e8fOydIhUdwzM.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizdRExUiTo99u79D0e8fOydKxUdwzM.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizdRExUiTo99u79D0e8fOydIRUdwzM.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'PT Sans';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizdRExUiTo99u79D0e8fOydLxUd.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0-ExdGM.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0aExdGM.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0yExdGM.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OOtLQ0Z.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OCtLQ0Z.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
